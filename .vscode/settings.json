@@ -13,6 +13,9 @@
         "--max-line-length=88"
     ],
     "python.linting.pylintEnabled": true,
+    "python.linting.pylintArgs":[
+        "--disable=C0111"
+    ],
     "python.formatting.provider": "black",
     "[python]": {
         "editor.formatOnSave": true
