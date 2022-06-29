@@ -90,7 +90,6 @@ const App = () => {
         <Spinner />
       ) : (
         <>
-          {' '}
           <Search
             word={word}
             setWord={setWord}
