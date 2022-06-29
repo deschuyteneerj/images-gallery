@@ -15,7 +15,7 @@ UNSPLASH_KEY = os.environ.get("UNSPLASH_KEY", "")
 DEBUG = bool(os.environ.get("DEBUG", True))
 
 if not UNSPLASH_KEY:
-    raise EnvironmentError("Please create .env.local file and insert the UNSPLASH_KEY")
+    raise EnvironmentError("Please create .env.local file and insert the UNSPLASH_KEY.")
 
 app = Flask(__name__)
 CORS(app)
@@ -55,9 +55,9 @@ def image(image_id):
         # delete image from the database
         result = images_collection.delete_one({"_id": image_id})
         if not result:
-            return {"error": "Image was not deleted. Please try again"}, 500
+            return {"error": "Image was not deleted. Please try again."}, 500
         if result and not result.deleted_count:
-            return {"error": "Image not found"}, 404
+            return {"error": "Image not found."}, 404
         return {"deleted_id": image_id}
 
 
