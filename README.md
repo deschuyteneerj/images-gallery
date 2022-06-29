@@ -8,12 +8,13 @@ The project was about to create a full app using nearly every different technolo
 - You can save an image using the **Save** button.
 - You can delete an image using the **Delete** button.
 
-There is a list of those:
+Here is a list of those:
 - Python
 - Flask
 - MongoDB
 - JavaScript
 - React
+- Docker
 
 ## How to launch the project
 
